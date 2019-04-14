@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,8 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Practice Assignment 2</title>
 </head>
+  
+
 <body>
 
+    <h2>Practice Assignment 2</h2>
+    <br><br>
+    <p>Click Button to display the assignment</p>
+    <button onclick="myFunction()">Do my work</button> <!--Thanks to W3 Schools-->
 
 
 <!-- jQuery -->
@@ -18,6 +25,43 @@
 <!-- Bootstrap JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <!-- Your JavaScript goes here -->
+
+<script>
+
+/*
+   Class      : CTEC126S2019
+   Author Name: Bruno George
+   Assignment : Practice Assignment 2
+   Due Date   : 04/14/2019
+*/
+/* I wanted to make sure that the HTML wrote on before the prompts*/
+/*Git-Hub is giving me fits.  This comment is an unnecessary modification*/
+function myFunction(){
+
+    let thingA = prompt("Write something");
+    let thingB = prompt("Write something else");
+    alert(" thingA and thingB concatinated is: " + thingA + thingB);
+
+	let numberA = Number(prompt("Pick an integer"));
+		if (!Number.isInteger(numberA)){
+			alert(numberA + " is not an integer");		  
+			numberA = Number(prompt("Pick a valid integer"));
+		}
+		
+	let numberB = Number(prompt("Pick another integer"));
+		
+		if (!Number.isInteger(numberB)){
+			alert(numberB + " is not an integer");		  
+			numberB = Number(prompt("Pick another valid integer"));
+		}
+
+
+	let numberC = numberA + numberB;
+    console.log("The sum of the two integers is " + numberC );	
+    }
+		
+
+</script>
 
 </body>
 </html>
